@@ -2,6 +2,7 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: space-evenly;
 }
 
 a{
@@ -17,12 +18,14 @@ ul{
 
 .header, .main-block, .footer {
     background-color: #1F2937;
+    padding: 30px;
 }
 
 
 .header{
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 .logo{
     margin-right: auto;
@@ -31,25 +34,57 @@ ul{
 }
 
 .main-block{
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .main-header{
     color: #F9FAF8;
     font-size: 48px;
 }
+.main-texts{
+    text-align: left;
+}
 .main-text{
     font-size: 18px;
     color: #E5E7EB;
 }
+.main-img{
+    min-width:300px;
+    min-height:300px;
+}
 
 .info-block{
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    gap: 100px;
 }
+
+.info-text{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937; 
+}
+
 .info-images{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
+    gap: 30px;
+}
+
+.info-img{
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
 }
 
 
@@ -58,9 +93,24 @@ ul{
     display: flex;
 }
 .quote-text{
-    color: #1F2937
+    color: #1F2937;
+    font-size: 36px;
+    font-style: italic;
 }
 
 .modal-block{
     background-color: #3882F6;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.modal.button{
+    align-self: left;
+}
+
+.footer-text{
+    color: #E5E7EB;
 }
